@@ -1,0 +1,110 @@
+body {
+    background-color: white; /* Gray background for the entire page */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 56px); /* Ensure the container takes full viewport height minus the navbar height */
+    margin-top: 56px; /* Distance from the navbar */
+    /* background: url('/images/registeration_back.jpg') no-repeat center center fixed; */
+    background-size: cover; /* Make the background image cover the entire container */
+  }
+  
+  .auth-box {
+    width: 90%;
+    max-width: 400px;
+    background-color: black; /* Background color for the sign-up container */
+    padding: 15px; /* Reduced padding for a more compact form */
+    border-radius: 8px; /* Slightly reduced border radius */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Reduced box shadow for a lighter appearance */
+    background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to improve text readability */
+  }
+  
+  .auth-box h3 {
+    text-align: center;
+    font-weight: bold;
+    color: #008b8b;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px; /* Adjusted margin for spacing */
+  }
+  
+  .auth-form {
+    width: 100%;
+  }
+  
+  .InputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .InputGroup label {
+    margin-top: 8px; /* Reduced margin for a tighter layout */
+    font-weight: bold;
+    color: whitesmoke; /* Changed color to dark gray for better readability */
+  }
+  
+  .InputGroup input {
+    margin-top: 4px; /* Reduced margin for a more compact look */
+    padding: 8px; /* Reduced padding for smaller input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+  
+  .auth-button {
+    margin-top: 15px; /* Reduced margin for a tighter layout */
+    width: 100%;
+    padding: 10px; /* Reduced padding for a smaller button */
+    background-color: #008b8b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .auth-button:hover {
+    background-color: #006f6f;
+  }
+  
+  .auth-switch {
+    margin-top: 15px; /* Reduced margin for a compact appearance */
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .auth-switch a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .auth-switch a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .auth-box {
+      width: 95%;
+      padding: 12px; /* Adjusted padding for tablets */
+    }
+  
+    .auth-button {
+      font-size: 14px;
+      padding: 8px; /* Adjusted padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .auth-box {
+      width: 100%;
+      padding: 10px; /* Further adjusted padding for mobile devices */
+    }
+  }
+  

@@ -1,0 +1,175 @@
+/* Set the background color of the entire page */
+body {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.cart-container {
+  max-width: 800px;
+  margin: 20px auto; /* Center horizontally but allow space from top */
+  padding: 15px;
+  background-color: gray;
+  border-radius: 20px;
+  color: white;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 65px;
+  margin-bottom: 25px;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px; /* Space between quantity input and remove button */
+}
+
+.remove-button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #ff4c4c;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.cart-total h3 {
+  font-size: 24px;
+  color: wheat;
+}
+
+.checkout-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+
+/* For laptops and tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .cart-item {
+    padding: 40px; /* Adjust padding for smaller screens */
+  }
+
+  .cart-item-image {
+    width: 150px; /* Slightly smaller image for better fit */
+    height: 120px; /* Adjust height to maintain aspect ratio */
+  }
+
+  .quantity-input {
+    width: 50px; /* Slightly smaller input */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .cart-total h3 {
+    font-size: 20px; /* Adjust font size for total */
+  }
+
+  .checkout-button {
+    padding: 8px 16px; /* Adjust padding for button */
+  }
+}
+
+/* For tablets and mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .cart-item {
+    padding: 20px; /* Reduce padding */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .cart-item-image {
+    width: 120px; /* Further adjust image size */
+    height: 100px; /* Further adjust height */
+  }
+
+  .quantity-input {
+    width: 40px; /* Further adjust input size */
+    font-size: 12px; /* Further adjust font size */
+  }
+
+  .remove-button {
+    padding: 6px 10px; /* Adjust padding */
+  }
+
+  .cart-total h3 {
+    font-size: 18px; /* Adjust font size for total */
+  }
+
+  .checkout-button {
+    padding: 8px 14px; /* Adjust padding */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .cart-item {
+    padding: 10px; /* Minimal padding */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .cart-item-image {
+    width: 100px; /* Smallest image size */
+    height: 80px; /* Smallest height */
+  }
+
+  .quantity-input {
+    width: 30px; /* Smallest input size */
+    font-size: 10px; /* Smallest font size */
+  }
+
+  .remove-button {
+    padding: 4px 8px; /* Minimal padding */
+  }
+
+  .cart-total h3 {
+    font-size: 16px; /* Smallest font size */
+  }
+
+  .checkout-button {
+    padding: 6px 12px; /* Minimal padding */
+  }
+}
